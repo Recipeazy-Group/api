@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+* {
+  /* box-sizing: border-box; */
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Questrial', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: #222222;
+}
+
+h3 {
+  color: #333333;
+}
+
+p {
+  color: #444444;
+}
+
+input, select {
+  margin-top: 1em;
+  border: 5px black !important;
+}
