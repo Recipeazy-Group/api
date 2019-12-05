@@ -1,5 +1,4 @@
 'use strict';
-
 var sql = require('./db.js');
 
 var Candidate = function(candidate) {

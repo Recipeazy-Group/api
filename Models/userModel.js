@@ -5,7 +5,8 @@ var sql = require('./db.js');
 var User = function(user) {
   this.username = user.username;
   this.email = user.email;
-  this.real_name = user.real_name;
+  this.f_name = user.f_name;
+  this.l_name = user.l_name;
   this.pass = user.pass;
 };
 
@@ -115,3 +116,4 @@ User.update = (upd_u) => {
 
 
 module.exports = User;
+module.exports =logUser;

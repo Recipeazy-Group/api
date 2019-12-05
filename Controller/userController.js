@@ -1,6 +1,7 @@
 'use strict';
 
 var User = require('../Models/userModel.js');
+var logUser = require('../Models/userModel.js');
 let logged_in = false;
 
 exports.create_user = function(req, res){
@@ -23,14 +24,14 @@ exports.create_user = function(req, res){
 };
 
 exports.login_user = function(req,res){
-  var login_user = new User(req.body);
+  var login_user = new logUser(req.body);
   if((!login_user.username && !login_user.email) || !login_user.pass){
     res.status(400).json({
       "code": 400,
       "response":"Please provide input for all fields."
     });
   }else{
-    User.loginUser(login_user, function(err, user){
+    logUser.loginUser(login_user, function(err, user){
       if(err){
         res.json(err);
       }

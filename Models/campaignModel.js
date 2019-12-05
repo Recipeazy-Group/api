@@ -69,7 +69,7 @@ delCampaign.deleteCampaign = function(err, id) {
   });
 };
 
-idCampaign.getAllCampaigns = function(id, result) {
+Campaign.getAllCampaigns = function(id, result) {
   sql.query(`SELECT * FROM 'Gov_site'.'Campaign' WHERE user_id = ?`, [id], function (err, res){
 if(err){
   result(err,null);
